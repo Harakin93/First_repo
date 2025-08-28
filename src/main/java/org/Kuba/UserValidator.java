@@ -1,6 +1,6 @@
-package org.example;
+package org.Kuba;
 
-class UserValidator
+public class UserValidator
 {
     public boolean validateAge(double age)
     {
@@ -20,28 +20,5 @@ class UserValidator
         } else {
             System.out.println("User is younger than 30 or lower than 160cm");
          }
-    }
-}
-
-public class App
-{
-    public static void main (String... args)
-    {
-        double age = 40.5;
-        double height = 178;
-        String name = "Adam";
-
-        UserValidator validator = new UserValidator();
-        boolean isOlderThanThirty = validator.validateAge(age);
-
-
-        if(name != null)
-        {
-            if(isOlderThanThirty)
-            {
-                validator.validateHeight(height);
-            }
-
-        }
     }
 }
