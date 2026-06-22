@@ -6,7 +6,6 @@ class Main {
         Program program = new Program();
         Program.main();
         program.createSomeCannons();
-        program.fireEveryCannonOrLoadIt();
-        program.fireEveryCannonOrLoadIt();
+        program.fireEveryCannonOrLoadIt(3);
     }
 }
